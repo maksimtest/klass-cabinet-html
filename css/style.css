@@ -26,7 +26,7 @@
   --cabinetTaskCorrectValueBackground: #228b08c4;
   --cabinetTaskColor: black;
   --cabinetTaskButtonBackground: #08A2F2;
-  --cabinetTaskHoverButtonBackground: #37b0ee;
+  --cabinetTaskHoverButtonBackground: #98d0ec;
   --cabinetTaskButtonColor: white;
 }
 
@@ -84,17 +84,18 @@ main {
   background-color: var(--cabinetLayoutMainTopBackground);
   color: var(--cabinetLayoutMainTopColor);
 }
-.main-header li a {
+.main-header a {
   color: var(--cabinetLayoutMainTopColor);
 }
-.main-header li a:hover {
-  color: var(--cabinetLayoutMainActiveTopColor);
-}
-
-.main-header .active a {
+.main-header-nav a:hover,
+.main-header-nav a.active {
   color: var(--cabinetLayoutMainActiveTopColor);
   border-bottom: 3px solid var(--cabinetLayoutAsideActiveBorder);
   padding-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.main-header-aside a:hover{
+  color: black;
 }
 .aside-content-banner {
   width: 120px;
@@ -111,6 +112,12 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.aside-header a{
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  color: var(--cabinetLayoutAsideTopColor);
+  font-weight: 600;
 }
 .aside-content-header {
     font-size: 18px;
@@ -217,9 +224,9 @@ main {
   margin-top: 20px;
 }
 .block-task-buttons button{
-  padding: 4px 8px;
+  padding: 6px 10px;
   font-size: 16px;
-  margin-right: 40px;
+  margin-right: 50px;
   background-color: var(--cabinetTaskButtonBackground);
   color: var(--cabinetTaskButtonColor);
 }
