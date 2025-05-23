@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/* soft color palette */
+:root {
+  --bodyBackground: #F4F1ED; /* светло-бежевый фон */
+
+  --cabinetLayoutAsideTopBackground: #7C5C42;  /* тёмный кофейный */
+  --cabinetLayoutAsideTopColor: #FFF8F1;       /* почти белый */
+
+  --cabinetLayoutAsideBackground: #A68A74;     /* тёплый серо-коричневый */
+  --cabinetLayoutAsideColor: #F2E4D9;          /* светло-бежевый */
+  --cabinetLayoutAsideActiveBackground: #5E4734;
+  --cabinetLayoutAsideActiveBackground1: #6C5A48;
+  --cabinetLayoutAsideActiveBorder: #D7B899;   /* бежево-золотой */
+
+  --cabinetLayoutMainTopBackground: #FFF8F1;   /* почти белый */
+  --cabinetLayoutMainTopColor: #927B68;        /* тёплый серо-коричневый */
+  --cabinetLayoutMainActiveTopColor: #5C4636;
+
+  --cabinetLayoutMainBackground: #F8F6F3;       /* общий фон */
+  --cabinetLayoutMainHeaderColor: #7D6B5A;
+  --cabinetLayoutMainColor: #5C4636;
+
+  --cabinetTaskBackground: #FFFFFF;
+  --cabinetTaskIncorrectValueBackground: #E27C7C66;  /* мягкий красноватый */
+  --cabinetTaskCorrectValueBackground: #85BFAFBB;    /* тёплый зелёно-бирюзовый */
+  --cabinetTaskColor: #3B2F25;
+  --cabinetTaskButtonBackground: #C2854F;        /* насыщенный бежево-оранжевый */
+  --cabinetTaskHoverButtonBackground: #E3BA90;   /* светлый вариант */
+  --cabinetTaskButtonColor: white;
+}
+

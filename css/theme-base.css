@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bodyBackground: #DDDDDD;
+
+  --cabinetLayoutAsideTopBackground: #3D4958;
+  --cabinetLayoutAsideTopColor: #FFFFFF;
+
+  --cabinetLayoutAsideBackground: #525a64;
+  --cabinetLayoutAsideColor: #B3B8BF;
+  --cabinetLayoutAsideActiveBackground: #28343C;
+  --cabinetLayoutAsideActiveBackground1: #333934;
+  --cabinetLayoutAsideActiveBorder: #8ec3dc;
+
+  --cabinetLayoutMainTopBackground: #FFFFFF;
+  --cabinetLayoutMainTopColor: #818181;
+  --cabinetLayoutMainActiveTopColor: #333934;
+ 
+  --cabinetLayoutMainBackground: #E7EAF0;
+  --cabinetLayoutMainHeaderColor: #6b6e73;
+  --cabinetLayoutMainColor: #6E7177;
+
+  --cabinetTaskBackground: white;
+  --cabinetTaskIncorrectValueBackground: #ed33336e;
+  --cabinetTaskCorrectValueBackground: #228b08c4;
+  --cabinetTaskColor: black;
+  --cabinetTaskButtonBackground: #08A2F2;
+  --cabinetTaskHoverButtonBackground: #98d0ec;
+  --cabinetTaskButtonColor: white;
+}

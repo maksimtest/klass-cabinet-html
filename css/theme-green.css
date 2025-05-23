@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/* soft green color palette */
+:root {
+  --bodyBackground: #F4F8F4; /* светлый мятно-зелёный */
+
+  --cabinetLayoutAsideTopBackground: #7A9E7E;  /* тёмный мягкий зелёный */
+  --cabinetLayoutAsideTopColor: #FFFFFF;
+
+  --cabinetLayoutAsideBackground: #A5C9A4;     /* серо-зелёный, мягкий */
+  --cabinetLayoutAsideColor: #F0F7F0;          /* почти белый с оттенком зелени */
+  --cabinetLayoutAsideActiveBackground: #628B68;
+  --cabinetLayoutAsideActiveBackground1: #6F9976;
+  --cabinetLayoutAsideActiveBorder: #1d733f;   /* светлая зелёная окантовка */
+
+  --cabinetLayoutMainTopBackground: #EAF3EA;
+  --cabinetLayoutMainTopColor: #6D826E;
+  --cabinetLayoutMainActiveTopColor: #475B49;
+
+  --cabinetLayoutMainBackground: #F7FAF7;
+  --cabinetLayoutMainHeaderColor: #627E63;
+  --cabinetLayoutMainColor: #4D644D;
+
+  --cabinetTaskBackground: #FFFFFF;
+  --cabinetTaskIncorrectValueBackground: #E2747460;  /* мягкий красный с прозрачностью */
+  --cabinetTaskCorrectValueBackground: #8BC48B60;    /* спокойный зелёный фон */
+  --cabinetTaskColor: #374937;
+  --cabinetTaskButtonBackground: #7BAF7B;       /* основной зелёный кнопки */
+  --cabinetTaskHoverButtonBackground: #A6D1A6;  /* светло-зелёный при наведении */
+  --cabinetTaskButtonColor: #FFFFFF;
+}
+
+
+
