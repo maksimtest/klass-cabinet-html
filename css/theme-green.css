@@ -30,6 +30,8 @@
   --cabinetTaskButtonBackground: #7BAF7B;       /* основной зелёный кнопки */
   --cabinetTaskHoverButtonBackground: #A6D1A6;  /* светло-зелёный при наведении */
   --cabinetTaskButtonColor: #FFFFFF;
+
+  --cabinetOpenIconColor: #A5C9A4;
 }
 
 

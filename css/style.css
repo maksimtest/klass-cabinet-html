@@ -1,241 +1,257 @@
-*{
-  margin: 0;
-  padding: 0;
-}
-
-:root {
-  --cabinetLayoutAsideTopBackground: #3D4958;
-  --cabinetLayoutAsideTopColor: #FFFFFF;
-
-  --cabinetLayoutAsideBackground: #333C48;
-  --cabinetLayoutAsideColor: #B3B8BF;
-  --cabinetLayoutAsideActiveBackground: #28343C;
-  --cabinetLayoutAsideActiveBackground1: #333934;
-  --cabinetLayoutAsideActiveBorder: #8ec3dc;
-
-  --cabinetLayoutMainTopBackground: #FFFFFF;
-  --cabinetLayoutMainTopColor: #818181;
-  --cabinetLayoutMainActiveTopColor: #333934;
- 
-  --cabinetLayoutMainBackground: #E7EAF0;
-  --cabinetLayoutMainHeaderColor: #6b6e73;
-  --cabinetLayoutMainColor: #6E7177;
-
-  --cabinetTaskBackground: white;
-  --cabinetTaskIncorrectValueBackground: #ed33336e;
-  --cabinetTaskCorrectValueBackground: #228b08c4;
-  --cabinetTaskColor: black;
-  --cabinetTaskButtonBackground: #08A2F2;
-  --cabinetTaskHoverButtonBackground: #98d0ec;
-  --cabinetTaskButtonColor: white;
+* {
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  font-family: Roboto, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  width: 100%;
-  background-color: #DDDDDD;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+    background-color: var(--bodyBackground);
 }
+
 a {
-  text-decoration: none;
-  cursor: pointer;
+    text-decoration: none;
+    cursor: pointer;
 }
-button{
-  cursor: pointer;
+
+button {
+    cursor: pointer;
 }
+
 ul li {
-  display: inline-block;
+    display: inline-block;
 }
+
 li {
-  list-style-type: none;
+    list-style-type: none;
 }
+
 section {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: baseline;
-  max-width: 1280px;
-  margin: 10px auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: baseline;
+    max-width: 1280px;
+    margin: 10px auto 0 auto;
 }
+
 main {
-  width: 100%;
+    width: 100%;
 }
-/* GENERAL STRUCTURE:
-  1) left aside can be hidden
-  2) mobile version of aside panel should be possible
- */
+
+.theme-selector {
+    padding: 6px 10px;
+}
+
 .layout-aside {
-  width: 200px;
+    width: 200px;
 }
+
 .aside-header, .main-header {
-  height: 40px;
+    height: 40px;
 }
+
 .aside-header {
-  display: flex;
-  justify-content: center;
-  align-content: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
+
 .main-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--cabinetLayoutMainTopBackground);
-  color: var(--cabinetLayoutMainTopColor);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cabinetLayoutMainTopBackground);
+    color: var(--cabinetLayoutMainTopColor);
 }
+
 .main-header a {
-  color: var(--cabinetLayoutMainTopColor);
+    color: var(--cabinetLayoutMainTopColor);
 }
+
 .main-header-nav a:hover,
 .main-header-nav a.active {
-  color: var(--cabinetLayoutMainActiveTopColor);
-  border-bottom: 3px solid var(--cabinetLayoutAsideActiveBorder);
-  padding-bottom: 10px;
-  transition: all 0.3s ease-in-out;
+    color: var(--cabinetLayoutMainActiveTopColor);
+    border-bottom: 3px solid var(--cabinetLayoutAsideActiveBorder);
+    padding-bottom: 10px;
+    transition: all 0.3s ease-in-out;
 }
-.main-header-aside a:hover{
-  color: black;
+
+.main-header-aside a:hover {
+    color: black;
 }
+
 .aside-content-banner {
-  width: 120px;
-  height: 120px;
-  margin-top: 40px;
-  margin-bottom: 14px;
+    width: 120px;
+    height: 120px;
+    margin-top: 40px;
+    margin-bottom: 14px;
 }
+
 .aside-header {
-  font-size: 18px;
-  letter-spacing: 1.5px;
-  background-color: var(--cabinetLayoutAsideTopBackground);
-  color: var(--cabinetLayoutAsideTopColor);
-  font-weight: 600;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    background-color: var(--cabinetLayoutAsideTopBackground);
+    color: var(--cabinetLayoutAsideTopColor);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.aside-header a{
-  font-size: 18px;
-  letter-spacing: 1.5px;
-  color: var(--cabinetLayoutAsideTopColor);
-  font-weight: 600;
+
+.aside-header a {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    color: var(--cabinetLayoutAsideTopColor);
+    font-weight: 600;
 }
+
 .aside-content-header {
     font-size: 18px;
     display: block;
     width: 100%;
     padding-left: 22px;
 }
+
 .aside-content-nav {
-  display: block;
-  width: 100%;
-  margin-top: 20px;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
 }
+
 .aside-content-nav li {
-  display: block;
-  border-top: 1px solid var(--cabinetLayoutAsideTopBackground);
-  padding: 10px 2px;
+    display: block;
+    border-top: 1px solid var(--cabinetLayoutAsideTopBackground);
+    padding: 10px 2px;
 }
+
 .aside-content-nav a {
     color: var(--cabinetLayoutAsideColor);
 }
+
 .aside-content-nav li:hover {
     background-color: var(--cabinetLayoutAsideActiveBackground);
     border-left: 3px solid var(--cabinetLayoutAsideActiveBorder);
     padding: 10px 0;
 }
+
 .aside-content-nav .icon {
-  width: 16px;
-  height: 16px;
-  margin-right: 10px;
-  margin-left: 10px;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
+
 .aside-content-nav .link-name {
-  display: inline-block;
+    display: inline-block;
 }
+
 .aside-content-nav .next-icon {
-  width: 14px;
-  height: 14px;
-  rotate: -90deg;
-  margin-left: 40px;
+    width: 14px;
+    height: 14px;
+    rotate: -90deg;
+    margin-left: 40px;
 }
+
 .aside-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: center;
-  background-color: var(--cabinetLayoutAsideBackground);
-  color: var(--cabinetLayoutAsideColor);
-  padding: 10px;
-  height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    background-color: var(--cabinetLayoutAsideBackground);
+    color: var(--cabinetLayoutAsideColor);
+    padding: 10px;
+    height: calc(100% - 60px);
 }
 
 .main-header-nav li {
-  margin-left: 20px;
+    margin-left: 20px;
 }
+
 .main-header {
-  padding: 0 40px;
+    padding: 0 40px;
 }
+
 /*  Main content area */
 .main-content {
-  background-color: var(--cabinetLayoutMainBackground);
-  color: var(--cabinetLayoutMainColor);
-  padding: 20px;
-  font-size: 16px;
-  text-align: center;
+    background-color: var(--cabinetLayoutMainBackground);
+    color: var(--cabinetLayoutMainColor);
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+    min-height: 380px;
 }
+
 .main-content h2 {
-  color: var(--cabinetLayoutMainHeaderColor);
+    color: var(--cabinetLayoutMainHeaderColor);
 }
+
 .block-task {
-  border-radius: 10px;
-  background-color: var(--cabinetTaskBackground);
-  color: var(--cabinetTaskColor);
-  padding: 20px;
-  margin-top: 20px;
-  text-align: left;
+    border-radius: 10px;
+    background-color: var(--cabinetTaskBackground);
+    color: var(--cabinetTaskColor);
+    padding: 20px;
+    margin-top: 20px;
+    text-align: left;
 }
-.block-task-question{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+
+.block-task-question {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-.block-task-mode{
-  width: 140px;
-  text-align: center;
+
+.block-task-mode {
+    width: 140px;
+    text-align: center;
 }
-.block-task-mode button{
-  position: absolute;
-  margin-top: -18px;
-  font-size: 50px;
-  color: black;
-  background-color: transparent;
-  border: none;
+
+.block-task-mode button {
+    position: absolute;
+    margin-top: -18px;
+    font-size: 50px;
+    color: var(--cabinetOpenIconColor);
+    background-color: transparent;
+    border: none;
+    width: 32px;
+    text-align: center;
 }
-.block-task-content{
-  display: block;
+
+.block-task-content {
+    display: block;
 }
-.block-task-case{
-  padding: 10px; 
+
+.block-task-case {
+    padding: 10px;
 }
-.block-task-input-text{
-  padding: 8px;  
+
+.block-task-input-text {
+    padding: 8px;
 }
-.block-task-buttons{
-  margin-top: 20px;
+
+.block-task-buttons {
+    margin-top: 20px;
 }
-.block-task-buttons button{
-  padding: 6px 10px;
-  font-size: 16px;
-  margin-right: 50px;
-  background-color: var(--cabinetTaskButtonBackground);
-  color: var(--cabinetTaskButtonColor);
+
+.block-task-buttons button {
+    padding: 6px 12px;
+    font-size: 16px;
+    margin-right: 50px;
+    background-color: var(--cabinetTaskButtonBackground);
+    color: var(--cabinetTaskButtonColor);
 }
-.block-task-buttons button:hover{
-  background-color: var(--cabinetTaskHoverButtonBackground);
+
+.block-task-buttons button:hover {
+    background-color: var(--cabinetTaskHoverButtonBackground);
 }
-.incorrect-value{
-  background-color: var(--cabinetTaskIncorrectValueBackground);
+
+.incorrect-value {
+    background-color: var(--cabinetTaskIncorrectValueBackground);
 }
-.correct-value{
-  background-color: var(--cabinetTaskCorrectValueBackground);
+
+.correct-value {
+    background-color: var(--cabinetTaskCorrectValueBackground);
 }

@@ -30,6 +30,8 @@
   --cabinetTaskButtonBackground: #3A99D8;      /* насыщенный синий */
   --cabinetTaskHoverButtonBackground: #64B5F6;
   --cabinetTaskButtonColor: #FFFFFF;
+
+  --cabinetOpenIconColor: white;
 }
 
 
