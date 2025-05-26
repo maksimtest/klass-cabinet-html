@@ -5,44 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Klass cabinet</title>
     <link rel="shortcut icon" href="images/favicon.ico">
+    <link id="theme-link" rel="stylesheet" href="css/theme-base.css" class="css">
     <link rel="stylesheet" href="css/style.css" class="css">
-    <script src="js/platform.js"></script>
+
 </head>
 <body>
 <section>
     <aside class="layout-aside">
         <div class="aside-header">
-            <span>KLASS APP</span>
+            <a href="#">KLASS APP</a>
         </div>
         <div class="aside-content">
-            <img src="images/banner.png" alt="" class="aside-content-banner">
+            <a href="#">
+                <img src="images/banner.png" alt="" class="aside-content-banner">
+            </a>
             <p class="aside-content-header">Menu</p>
             <ul class="aside-content-nav">
                 <li>
-                    <a href="">
+                    <a href="#">
                         <img src="images/home-icon.png" alt="" class="icon">
                         <p class="link-name">Home</p>
                         <img src="images/next.png" alt="" class="next-icon">
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="#">
                         <img src="images/users-icon.png" alt="" class="icon">
-                        <span class="link-name">Home</span>
+                        <span class="link-name">Pages</span>
                         <img src="images/next.png" alt="" class="next-icon">
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="#">
                         <img src="images/settings-icon.png" alt="" class="icon">
-                        <p class="link-name">Home</p>
+                        <p class="link-name">Items</p>
                         <img src="images/next.png" alt="" class="next-icon">
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="#">
                         <img src="images/download-icon.png" alt="" class="icon">
-                        <p class="link-name">Home</p>
+                        <p class="link-name">About</p>
                         <img src="images/next.png" alt="" class="next-icon">
                     </a>
                 </li>
@@ -53,21 +56,26 @@
     <main>
         <div class="main-header">
             <ul class="main-header-nav">
-                <li class="active">
-                    <a href="#">Item1</a>
+                <li>
+                    <a href="#" class="active">Learn</a>
                 </li>
                 <li>
-                    <a href="#">Item1</a>
+                    <a href="#">Materails</a>
                 </li>
                 <li>
-                    <a href="#">Item1</a>
+                    <a href="#">Images</a>
                 </li>
                 <li>
-                    <a href="#">Item1</a>
+                    <a href="#">Other</a>
                 </li>
             </ul>
             <div class="main-header-aside">
-                profile
+                <select id="theme-selector" class="theme-selector">
+                    <option value="theme-base.css">theme-base</option>
+                    <option value="theme-dark.css">theme-dark</option>
+                    <option value="theme-green.css">theme-green</option>
+                    <option value="theme-soft.css">theme-soft</option>
+                </select>
             </div>
         </div>
         <div class="main-content">
@@ -135,6 +143,6 @@
         </div>
     </main>
 </section>
-
+<script src="js/platform.js"></script>
 </body>
 </html>
